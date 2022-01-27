@@ -488,6 +488,15 @@ body{
 	padding: 19px;
 	cursor: pointer;
 }
+.mailing__block > input[type="email"]:hover{
+	background-color: #f3f3f3;
+}
+.mailing__block > input[type="email"]:focus{
+	box-shadow: 0 0 10px #bebebe;
+	background-color: #fff;
+	outline: none;
+}
+
 .mailing__form > input[type="submit"]{
 	padding: 21px 43px;
 	border: none;
@@ -526,6 +535,10 @@ body{
 .mailing__checkbox > label a{
 	color: #2b3541;
 }
+.mailing__checkbox > label a:hover{
+	color: #000;
+}
+
 .mailing__checkbox > label::before{
 	content: ' ';
 	display: inline-block;
