@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Онлайн тренировки</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css"
+	<link rel="stylesheet" href="styles/main.css">
 	<link rel="apple-touch-icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
 	<link rel="icon" type="image/png" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
@@ -31,12 +31,12 @@
 				</div>
 				<nav class="header__nav">
 					<div class="header__nav_burger">
-						<button class="nav__burger" onclick="openModal()"></button>
+						<button class="nav__burger" onclick="openModalBurger()"></button>
 					</div>
 					<ul>
-						<li><a href="#">Мероприятия</a></li>
-						<li><a href="#">Расписание</a></li>
-						<li><a href="#">О компании</a></li>
+						<li><a href="#mainEvents">Мероприятия</a></li>
+						<li><a href="#mainShedule">Расписание</a></li>
+						<li><a href="#company">О компании</a></li>
 					</ul>
 				</nav>
 				<div class="header__icon">
@@ -56,46 +56,330 @@
 					<div class="info__title">
 						онлайн тренировки любой сложности
 					</div>
-					<div class="info__subtitle">
-						> 15 тренировок
+					<div class="info__subtitle subtitle">
+						<div class="subtitle__number">
+							> 15
+						</div>
+						<div class="subtitle__word">
+							тренировок
+						</div>
 					</div>
-					<div class="info__text">
-						в области спортивной физиологии и нутрициологии
-					</div>
-					<button class="info__btn">
-						<a href="#">
+					<div class="info__box">
+						<div class="info__text">
+							в области спортивной<br> физиологии и нутрициологии
+						</div>
+						<button class="info__btn">
 							Узнать подробнее
-						</a>
-					</button>
-					<div class="arrow">
-						<img src="img/arrow-bg.svg" alt="Стрелка прокрутки">
+						</button>
 					</div>
+					<a href="#mainEvents" class="arrow">
+						<img src="img/arrow-bg.svg" alt="Стрелка прокрутки">
+					</a>
 				</div>
-				<div class="bg__img">
-					<img src="img/bg.png" alt="Фоновое изображение">
+				<div class="visual">
+					<div class="visual__gradient_left"></div>
+					<div class="visual__gradient_right"></div>
+					<img class="visual__img" src="img/girl.png" alt="Девушка">
 				</div>
 			</div>
 		</div>
 
 		<main class="main">
-			<section class="events">
-
+			<section class="main__events events" id="mainEvents">
+				<div class="events_container">
+					<div class="events__title">
+						Ближайшие события
+					</div>
+					<div class="events__banner">
+						<div class="banner__marathon banner">
+							<div class="banner__gradient"></div>
+							<span class="banner__date">
+								29.06 - 4.07
+							</span>
+							<div class="banner__title">
+								Марафон<br> выносливости
+							</div>
+							<button id="btn1" class="banner__btn" onclick="openModalMarathon()">
+								Учавствовать
+							</button>
+							<div class="banner__sticker">
+								марафон
+							</div>
+							<div class="banner__plus" onclick="openModalMarathon()">
+								<img src="img/plus.svg" alt="Иконка вызова модального окна">
+							</div>
+						</div>
+						<div class="banner__vebinar1 banner">
+							<div class="banner__gradient"></div>
+							<span class="banner__date">
+								9.07
+							</span>
+							<div class="banner__title">
+								Как стать<br> тренером?
+							</div>
+							<button class="banner__btn" onclick="openModalVebinar1()">
+								Учавствовать
+							</button>
+							<div class="banner__sticker">
+								вебинар
+							</div>
+							<div class="banner__plus" onclick="openModalVebinar1()">
+								<img src="img/plus.svg" alt="Иконка вызова модального окна">
+							</div>
+						</div>
+						<div class="banner__vebinar2 banner">
+							<div class="banner__gradient"></div>
+							<span class="banner__date">
+								15.07
+							</span>
+							<div class="banner__title">
+								Йога, как стиль жизни
+							</div>
+							<button class="banner__btn" onclick="openModalVebinar2()">
+								Учавствовать
+							</button>
+							<span class="banner__sticker">
+								вебинар
+							</span>
+							<div class="banner__plus" onclick="openModalVebinar2()">
+								<img src="img/plus.svg" alt="Иконка вызова модального окна">
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section class="shedule">
-				
+
+			<section class="main__shedule shedule" id="mainShedule">
+				<div class="shedule__container">
+					<div class="shedule__info">
+						<div class="shedule__title">
+							Расписание тренировок
+						</div>
+						<div class="shedule__date">
+							22 - 28 июня
+						</div>
+					</div>
+					<div class="shedule__block block">
+						<div class="block__type">
+							<div class="block__date">
+								22 июня, 10:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/body.svg" alt="Иконка тела">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										Функциональный тренинг
+									</div>
+									<div class="block__text">
+										Тренировки тела для ежедневных действий.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__type">
+							<div class="block__date">
+								23 июня, 10:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/jump.svg" alt="Иконка скакалка">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										Силовой микс
+									</div>
+									<div class="block__text">
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__type">
+							<div class="block__date">
+								24 июня, 10:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/bottle.svg" alt="Иконка бутылка">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										Body sculpt
+									</div>
+									<div class="block__text">
+										Силовая фитнес тренировка для гармоничного развития всего тела
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__type">
+							<div class="block__date">
+								25 июня, 11:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/heart.svg" alt="Иконка сердце">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										Дыхательные практики
+									</div>
+									<div class="block__text">
+										Применяются для расслабления или бодрости.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__type">
+							<div class="block__date">
+								26 июня, 11:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/dumbbell.svg" alt="Иконка гантель">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										L.A.B.
+									</div>
+									<div class="block__text">
+										Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block__type">
+							<div class="block__date">
+								27 июня, 10:00
+							</div>
+							<div class="block__content">
+								<div class="block__icon">
+									<img src="img/weight.svg" alt="Иконка гиря">
+								</div>
+								<div class="block__description">
+									<div class="block__title">
+										Комплексная разминка
+									</div>
+									<div class="block__text">
+										Подготовка тела перед физической нагрузкой.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 
-		<email class="email">
-
+		<email class="email__mailing mailing">
+			<div class="mailing__container">
+				<div class="mailing__title">
+					<p>Подпишитесь на рассылку</p>
+				</div>
+				<form class="mailing__form">
+					<div class="mailing__box">
+						<div class="mailing__block">
+							<input type="email" placeholder="Ваш e-mail">
+						</div>
+						<div class="mailing__checkbox">
+							<input id="check" type="checkbox" value="yes" required />
+							<label for="check"><p>Согласен с обработкой <a href="#">персональных данных</a></p></label>
+						</div>
+					</div>
+					<input type="submit" value="Подписаться">
+				</form>
+			</div>
 		</email>
 
-		<aside class="aside">
-
-		</aside>
+		<article class="company" id="company">
+			<div class="company__container">
+				<div class="company__block">
+					<div class="company__information">
+						<div class="company__title">
+							О компании
+						</div>
+						<div class="company__text">
+							Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь<br> с нами и вы сами увидите, что мы проводим<br> не только онлайн-тренировки.
+						</div>
+						<button class="company__button">
+							Записаться
+						</button>
+					</div>
+					<div class="company__img"><img src="img/company.png" alt=""></div>
+				</div>
+				<div class="company__advantages advantages">
+					<div class="advantages__info">
+						<div class="advantages__title">
+							Экономия времени
+						</div>
+						<div class="advantages__subtitle">
+							Не нужно тратить время на дорогу
+						</div>
+					</div>
+					<div class="advantages__info">
+						<div class="advantages__title">
+							Индивидуальный подход
+						</div>
+						<div class="advantages__subtitle">
+							Внимание тренера пренадлежит только вам
+						</div>
+					</div>
+					<div class="advantages__info">
+						<div class="advantages__title">
+							Экономия денег
+						</div>
+						<div class="advantages__subtitle">
+							Средняя цена одной тренировки - 700₽
+						</div>
+					</div>
+					<div class="advantages__info">
+						<div class="advantages__title">
+							Опытный персонал
+						</div>
+						<div class="advantages__subtitle">
+							Стаж работы у наших тренеров от 5 лет
+						</div>
+					</div>
+				</div>
+				<button class="company__button_mobil">
+					Записаться
+				</button>
+				<div class="company__img_mobil"><img src="img/company.png" alt=""></div>
+			</div>
+		</article>
 
 		<footer class="footer">
-
+			<div class="footer__container">
+				<div class="footer__logo">
+					<img src="img/logo.svg" alt="Логотип компании">
+				</div>
+				<nav class="footer__nav">
+					<ul>
+						<li><a href="#mainEvents">Мероприятия</a></li>
+						<li><a href="#mainShedule">Расписание</a></li>
+						<li><a href="#company">О компании</a></li>
+					</ul>
+				</nav>
+				<div class="footer__contacts contacts">
+					<div class="contacts__mail">
+						info@freefit.com
+					</div>
+					<div class="contacts__icon">
+						<a href="#"><img src="img/insta.svg" alt="Иконка инстаграм"></a>
+						<a href="#"><img src="img/fb.svg" alt="Иконка фейсбук"></a>
+					</div>
+				</div>
+				<div class="footer__text text">
+					<div class="text">
+						© 2020, Все права защищены
+					</div>
+					<div class="text">
+						Сделано в рамках курса учебной платформы Annblok
+					</div>
+				</div>
+			</div>
 		</footer>
 
 		<div id="modal" class="modal">
@@ -105,11 +389,11 @@
 						<img src="img/logo.svg" alt="Логотип сайта">
 					</a>
 				</div>
-				<nav class="modal__nav">
+				<nav class="modal__nav nav">
 					<ul class="nav__menu">
-						<li><a href="#">Мероприятия</a></li>
-						<li><a href="#">Расписание</a></li>
-						<li><a href="#">О компании</a></li>
+						<li><a href="#mainEvents" class="nav__events">Мероприятия</a></li>
+						<li><a href="#mainShedule" class="nav__shedule">Расписание</a></li>
+						<li><a href="#company" class="nav__company">О компании</a></li>
 					</ul>
 				</nav>
 				<div class="modal__icon">
@@ -121,18 +405,75 @@
 					</a>
 				</div>
 				<div class="modal__menu_clouse">
-					<button class="modal__clouse" onclick="closeModal()"></button>
+					<button class="modal__clouse" onclick="closeModalBurger()"></button>
 				</div>
 			</div>
 		</div>
+		
+		<div id="modalApplicationMarathon" class="modal__application application">
+			<div class="application__container">
+				<div class="application__text">
+					<div class="application__title">
+						<p>Заявка на участие<br>«Марафон выносливости»</p>
+					</div>
+					<div class="application__subtitle">
+						Заполните все поля, и мы пришлем информацию в ближайшее время
+					</div>
+				</div>
+				<form class="application__form">
+					<input type="email" placeholder="Ваш e-mail" required>
+					<input type="tel" placeholder="Ваш номер телефона" required>
+					<input type="submit" value="Отправить">
+				</form>
+				<div class="modal__application_clouse">
+					<button class="application__clouse" onclick="closeModalMarathon()"></button>
+				</div>
+			</div>
+		</div>
+
+		<div id="modalApplicationVebinar1" class="modal__application application">
+			<div class="application__container">
+				<div class="application__text">
+					<div class="application__title">
+						<p>Заявка на участие<br>«Как стать тренером?»</p>
+					</div>
+					<div class="application__subtitle">
+						Заполните все поля, и мы пришлем информацию в ближайшее время
+					</div>
+				</div>
+				<form class="application__form">
+					<input type="email" placeholder="Ваш e-mail" required>
+					<input type="tel" placeholder="Ваш номер телефона" required>
+					<input type="submit" value="Отправить">
+				</form>
+				<div class="modal__application_clouse">
+					<button class="application__clouse" onclick="closeModalVebinar1()"></button>
+				</div>
+			</div>
+		</div>
+
+		<div id="modalApplicationVebinar2" class="modal__application application">
+			<div class="application__container">
+				<div class="application__text">
+					<div class="application__title">
+						<p>Заявка на участие<br>«Йога, как стиль жизни»</p>
+					</div>
+					<div class="application__subtitle">
+						Заполните все поля, и мы пришлем информацию в ближайшее время
+					</div>
+				</div>
+				<form class="application__form">
+					<input type="email" placeholder="Ваш e-mail" required>
+					<input type="tel" placeholder="Ваш номер телефона" required>
+					<input type="submit" value="Отправить">
+				</form>
+				<div class="modal__application_clouse">
+					<button class="application__clouse" onclick="closeModalVebinar2()"></button>
+				</div>
+			</div>
+		</div>
+
 	</div>
-	<script>
-		function openModal() {
-				document.getElementById("modal").style.top = "0px";
-			}
-		function closeModal() {
-			document.getElementById("modal").style.top = "-500px";
-		}
-	</script>
+	<script src="script/script.js"></script>
 </body>
 </html>
