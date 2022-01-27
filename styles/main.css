@@ -49,6 +49,7 @@ body{
 	text-decoration: none;
 	color: #2B3541;
 	font-size: 18px;
+	padding-bottom: 10px;
 }
 .header__nav ul a:hover{
 	border-bottom: 1px solid #2B3541;
@@ -498,7 +499,11 @@ body{
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	cursor: pointer;
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
+}
+.mailing__form > input[type="submit"]:hover{
+	background: #2b3541;
+	color: #FBF138;
 }
 
 .mailing__checkbox{
@@ -695,10 +700,14 @@ body{
 	list-style-type: none;
 	gap: 95px;
 }
-.footer__nav > ul > li > a{
+.footer__nav ul a{
 	text-decoration: none;
 	color: #2b3541;
 	font-size: 14px;
+	padding-bottom: 10px;
+}
+.footer__nav ul a:hover{
+	border-bottom: 1px solid #2B3541;
 }
 
 .footer__contacts{
@@ -713,6 +722,9 @@ body{
 	font-size: 16px;
 	z-index: 0;
 	margin-left: 17px;
+	text-decoration: none;
+	color: #2b3541;
+
 }
 .contacts__mail::before{
 	content: ' ';
@@ -1232,13 +1244,13 @@ body{
 	}
 	.footer__nav > ul{
 		gap: 0;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	.footer__contacts{
 		gap: 0;
 		width: 100%;
 		justify-content: space-between;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.footer__text{
 		gap: 20px;
@@ -1606,6 +1618,12 @@ body{
 
 	.footer__container{
 		margin-bottom: 40px;
+	}
+	.footer__nav > ul{
+		justify-content: space-between;
+	}
+	.footer__contacts{
+		margin-top: 20px;
 	}
 }
 
