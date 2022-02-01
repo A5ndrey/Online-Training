@@ -6,7 +6,7 @@ function closeModalBurger() {
 }
 
 function openModalMarathon() {
-	document.getElementById("modalApplicationMarathon").style.top = "10%";
+	document.getElementById("modalApplicationMarathon").style.top = "15%";
 	document.getElementById("modalApplicationVebinar2").style.top = "-700px";
 	document.getElementById("modalApplicationVebinar1").style.top = "-700px";
 }
@@ -15,7 +15,7 @@ function closeModalMarathon() {
 }
 
 function openModalVebinar1() {
-	document.getElementById("modalApplicationVebinar1").style.top = "10%";
+	document.getElementById("modalApplicationVebinar1").style.top = "15%";
 	document.getElementById("modalApplicationMarathon").style.top = "-700px";
 	document.getElementById("modalApplicationVebinar2").style.top = "-700px";
 }
@@ -24,7 +24,7 @@ function closeModalVebinar1() {
 }
 
 function openModalVebinar2() {
-	document.getElementById("modalApplicationVebinar2").style.top = "10%";
+	document.getElementById("modalApplicationVebinar2").style.top = "15%";
 	document.getElementById("modalApplicationVebinar1").style.top = "-700px";
 	document.getElementById("modalApplicationMarathon").style.top = "-700px";
 }
