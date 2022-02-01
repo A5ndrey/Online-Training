@@ -1470,6 +1470,9 @@ body{
 	.events__banner{
 		grid-template-rows: 360px;
 	}
+	.shedule__info{
+		padding-top: 40px;
+	}
 }
 
 @media(max-width:700px){
@@ -1504,7 +1507,7 @@ body{
 	}
 	.events__title{
 		margin-bottom: calc(20px + (40 - 20) * ((100vw - 360px) / (655 - 360)));
-		margin-top: calc(60px + (140 - 60) * ((100vw - 360px) / (655 - 360)));
+		padding-top: calc(40px + (120 - 40) * ((100vw - 360px) / (655 - 360)));
 	}
 	.banner{
 		padding: 20px;
