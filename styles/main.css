@@ -1536,6 +1536,12 @@ body{
 	}
 }
 
+@media(max-width:664px){
+	.footer__text{
+		justify-content: center;
+	}
+}
+
 @media(min-width:655px){
 	
 	.banner__plus{
@@ -1638,7 +1644,7 @@ body{
 	}
 	.footer__text{
 		gap: 20px;
-		justify-content: space-around;
+		justify-content: space-between;
 		margin-top: 40px;
 	}
 
@@ -1857,6 +1863,10 @@ body{
 		width: 31px;
 		height: 31px;
 		left: 18px;
+	}
+	
+	.footer__text{
+		justify-content: center;
 	}
 }
 
