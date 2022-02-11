@@ -562,6 +562,7 @@ body{
 	text-transform: uppercase;
 	cursor: pointer;
 	transition-duration: 0.2s;
+	color: #2b3541;
 }
 .mailing__form > input[type="submit"]:hover{
 	background: #2b3541;
@@ -643,7 +644,6 @@ body{
 .company__title{
 	font-weight: 700;
 	font-size: 40px;
-	color: #2B3541;
 }
 
 .company__text{
@@ -664,6 +664,7 @@ body{
 	margin-top: 34px;
 	transition-duration: 0.3s;
 	box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+	color: #2b3541
 }
 .company__button:hover{
 	background: #2b3541;
@@ -684,6 +685,7 @@ body{
 	margin-top: 40px;
 	margin-bottom: 60px;
 	transition-duration: 0.3s;
+	color: #2b3541;
 }
 .company__button_mobil:hover{
 	background: #2b3541;
@@ -1043,6 +1045,7 @@ body{
 	border: none;
 	margin-top: 20px;
 	margin-bottom: 80px;
+	color: #2b3541;
 }
 .application__form > input[type="submit"]:hover{
 	background: #2B3541;
@@ -1751,7 +1754,7 @@ body{
 		font-size: 16px;
 	}
 	.block__title{
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.block__text{
 		font-size: 12px;
@@ -1907,5 +1910,9 @@ body{
 	.advantages__info:nth-child(4){
 		flex-basis: 223px;
 		flex-shrink: 0;
+	}
+
+	.block__type:not(:nth-child(2)) .block__title{
+		margin-bottom: 3px;
 	}
 }
