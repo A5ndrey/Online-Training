@@ -300,8 +300,6 @@ body{
 	padding: 20px 37px;
 	border: none;
 	margin-top: 45px;
-	top: 185px;
-	left: 30px;
 	opacity: 0;
 	transition-duration: 0.2s;
 	cursor: pointer;
