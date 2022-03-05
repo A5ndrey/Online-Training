@@ -1161,7 +1161,7 @@ body{
 	.advantages__info:nth-child(2),
 	.advantages__info:nth-child(3),
 	.advantages__info:nth-child(4){
-		flex-basis: 438px;
+		flex-basis: 437px;
 	}
 	.company__advantages{
 		row-gap: 40px;
@@ -1269,7 +1269,7 @@ body{
 	.advantages__info:nth-child(2),
 	.advantages__info:nth-child(3),
 	.advantages__info:nth-child(4){
-		flex-basis: calc(270px + (438 - 270) * ((100vw - 600px) / (933 - 600)));
+		flex-basis: calc(270px + (437 - 270) * ((100vw - 600px) / (933 - 600)));
 	}
 }
 
