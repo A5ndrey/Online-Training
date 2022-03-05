@@ -1161,7 +1161,7 @@ body{
 	.advantages__info:nth-child(2),
 	.advantages__info:nth-child(3),
 	.advantages__info:nth-child(4){
-		flex-basis: 442px;
+		flex-basis: 438px;
 	}
 	.company__advantages{
 		row-gap: 40px;
