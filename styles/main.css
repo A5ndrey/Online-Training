@@ -1600,7 +1600,7 @@ body{
 		padding: 20px;
 	}
 	.banner:hover .banner__gradient{
-		opacity: 0.2;
+		opacity: 0.5;
 	}
 	.banner:nth-child(3){
 		grid-column-start: 1;
